@@ -3,6 +3,7 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
+import sys
 import keras
 import tensorflow as tf
 from keras.models import Sequential
@@ -36,9 +37,11 @@ validLabels = []
 
 
 
-folder = "/path/to/your/data/"
+folder = sys.argv[1] #### /path/to/your/data/
+train_input = sys.argv[2] #### "LNCap_after_DHT_all_DHS.overlapH3K27ac.center1KB.withDHSctrl.training.DLinput.shuffled"
+valid_input = sys.argv[3] #### "LNCap_after_DHT_all_DHS.overlapH3K27ac.center1KB.withDHSctrl.validation.DLinput.shuffled"
 ### training set
-file = folder + "LNCap_after_DHT_all_DHS.overlapH3K27ac.center1KB.withDHSctrl.training.DLinput.shuffled" #### training input, you can replace it with your file name
+file = folder +  train_input #### training input, you can replace it with your file name
 
 with open(file) as IN1:
     for line in IN1:
@@ -60,7 +63,7 @@ y_train = np.array(intTrainLabels)
 print(y_train.shape)
 
 ### validation set
-file0 = folder + "LNCap_after_DHT_all_DHS.overlapH3K27ac.center1KB.withDHSctrl.validation.DLinput.shuffled" #### validation input, you can replace it with your file name
+file0 = folder + valid_input #### validation input, you can replace it with your file name
 
 with open(file0) as IN0:
     for line in IN0:

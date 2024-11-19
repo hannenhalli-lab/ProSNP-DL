@@ -3,6 +3,7 @@ from __future__ import division
 from __future__ import print_function
 
 import numpy as np
+import sys
 import keras
 import tensorflow as tf
 from keras.models import Sequential
@@ -31,11 +32,12 @@ acgt2vec = {'A': [1, 0, 0, 0],
 allWindows1 = [] ### vector of sequence
 testLabels = []
 
-folder = "/path/to/your/data/"
+folder = sys.argv[1] #### /path/to/your/data/
+test_input = sys.argv[2] #### "LNCap_after_DHT_all_DHS.overlapH3K27ac.center1KB.withDHSctrl.testing.DLinput.shuffled"
 
 
 ## testing set
-file1 = folder + "LNCap_after_DHT_all_DHS.overlapH3K27ac.center1KB.withDHSctrl.testing.DLinput.shuffled" ### testing input, you can replace it with your file name
+file1 = folder + test_input ### testing input, you can replace it with your file name
 
 with open(file1) as IN2:
     for line in IN2:
