@@ -1,7 +1,6 @@
 # ProSNP-DL
 
 1. Introduction
-   
 A deep learning based pipeline to identify functional non-coding germline variants mediating prostate cancer susceptibility 
 This pipeline first generates a sequence-based prostate enhancer deep learning model. By applying the deep learning model to the 20 centeral [-200bp, +200bp] windows overlapping a high-Fst SNP, it evaluates the impact of the alternative allele by its essential window number (EWN), i.e. how many times that alternative allele change an non-enhancer to an enhnancer and vice versa according to the model. If the alternative allele with gained-enhancer effects have EWN ≥ 5, it will be considered as a gained eSNP; if the alternative allele with lost-enhancer effects have EWN ≥ 5, it will be considered as a lost eSNP.
 
@@ -9,7 +8,6 @@ This pipeline first generates a sequence-based prostate enhancer deep learning m
 
 
 2. Usage
-
 - The "model" folder contains the codes for training and testing. The data for training, validation, and testing can be downloaded from https://drive.google.com/drive/folders/1LV2_0kkPfAI6276tpE8g0GUn_Kw0zpxm?usp=drive_link 
 and the trained deep learning model (hdf5 file) can be downloaded from https://drive.google.com/file/d/1ZZmbk_mIp27asQv6L44dlAEN8mgzOb5j/view?usp=drive_link
 To run the python code, you need to impport tensorflow and Keras which could be loaded through conda environment or image file
