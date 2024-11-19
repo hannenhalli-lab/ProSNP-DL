@@ -8,12 +8,14 @@ This pipeline first generates a sequence-based prostate enhancer deep learning m
 
 
 2. Usage
-- The "model" folder contains the codes for training and testing. The data for training, validation, and testing can be downloaded from https://drive.google.com/drive/folders/1LV2_0kkPfAI6276tpE8g0GUn_Kw0zpxm?usp=drive_link 
+2.1 The "model" folder contains the codes for training and testing. The data for training, validation, and testing can be downloaded from https://drive.google.com/drive/folders/1LV2_0kkPfAI6276tpE8g0GUn_Kw0zpxm?usp=drive_link 
 and the trained deep learning model (hdf5 file) can be downloaded from https://drive.google.com/file/d/1ZZmbk_mIp27asQv6L44dlAEN8mgzOb5j/view?usp=drive_link
 
-To run the python code, you need to impport tensorflow and Keras which could be loaded through conda environment or image file. For the training step, simply run: python train.py /path/to/your/input/data/ train_input_file validation_input_file. Similarly, to test the model, run: python test.py /path/to/your/input/data/ test_inpput
+To run the python code, you need to impport tensorflow and Keras which could be loaded through conda environment or image file. 
+For the training step, simply run: python train.py /path/to/your/input/data/ train_input_file validation_input_file. 
+Similarly, to test the model, run: python test.py /path/to/your/input/data/ test_inpput
 
-- In the folder "scoreSNP", there're three scripts corresponding to three steps. Before running the three steps, we need to partition the SNP files to 100 to 1000 bins, so that we can run the deep learning model to score the mutated sequences of all the sliding windows for sets of SNPs parallelly. Here we used the lost eSNP rs10095018 as an example to show the format of the partioned SNP file, named "1Kgenomes_phase3_commonAFR_or_commonEUR_snps.commonChrs.top5percentFst.bed.bin_1".
+2.2 In the folder "scoreSNP", there're three scripts corresponding to three steps. Before running the three steps, we need to partition the SNP files to 100 to 1000 bins, so that we can run the deep learning model to score the mutated sequences of all the sliding windows for sets of SNPs parallelly. Here we used the lost eSNP rs10095018 as an example to show the format of the partioned SNP file, named "1Kgenomes_phase3_commonAFR_or_commonEUR_snps.commonChrs.top5percentFst.bed.bin_1".
   
 a. In step1, run: perl step1_batch_extract_slidingWindowOverlap_highFstSNPs_seq.pl 1
 where the input argument "1" here is the bin ID, which ranges from 1 to X (X=100 to 1000, as determined by users). We applied nibFrag to extract genomic   sequences of hg19. The commands of nibFrag can be downloaded here: https://drive.google.com/file/d/1gvV8OwgvnSi6CIhAAt31JLgMWUgUMo7W/view?usp=drive_link
