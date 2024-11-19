@@ -16,7 +16,7 @@ To run the python code, you need to impport tensorflow and Keras which could be 
 
 For the training step, simply run: python train.py /path/to/your/input/data/ train_input_file validation_input_file. 
 
-Similarly, to test the model, run: python test.py /path/to/your/input/data/ test_inpput
+Similarly, to test the model, run: python test.py /path/to/your/input/data/ test_inpput_file
 
 2.2 In the folder "scoreSNP", there're three scripts corresponding to three steps. Before running the three steps, we need to partition the SNP files to 100 to 1000 bins, so that we can run the deep learning model to score the mutated sequences of all the sliding windows for sets of SNPs parallelly. Here we used the lost eSNP rs10095018 as an example to show the format of the partioned SNP file, named "1Kgenomes_phase3_commonAFR_or_commonEUR_snps.commonChrs.top5percentFst.bed.bin_1".
   
