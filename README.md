@@ -9,7 +9,7 @@ This pipeline first generates a sequence-based prostate enhancer deep learning m
 
 2. Usage
    
-2.1 The "model" folder contains the codes for training and testing. The data for training, validation, and testing can be downloaded from https://drive.google.com/drive/folders/1LV2_0kkPfAI6276tpE8g0GUn_Kw0zpxm?usp=drive_link 
+2.1 The "model" folder contains the codes for training and testing. The input data for training, validation, and testing can be downloaded from https://drive.google.com/drive/folders/1LV2_0kkPfAI6276tpE8g0GUn_Kw0zpxm?usp=drive_link 
 and the trained deep learning model (hdf5 file) can be downloaded from https://drive.google.com/file/d/1ZZmbk_mIp27asQv6L44dlAEN8mgzOb5j/view?usp=drive_link
 
 To run the python code, you need to impport tensorflow and Keras which could be loaded through conda environment or image file. 
