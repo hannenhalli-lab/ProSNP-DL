@@ -5,7 +5,8 @@ A deep learning based pipeline to identify functional non-coding germline varian
 This pipeline first generates a sequence-based prostate enhancer deep learning model. By applying the deep learning model to the 20 centeral [-200bp, +200bp] windows overlapping a high-Fst SNP, it evaluates the impact of the alternative allele by its essential window number (EWN), i.e. how many times that alternative allele change an non-enhancer to an enhnancer and vice versa according to the model. If the alternative allele with gained-enhancer effects have EWN ≥ 5, it will be considered as a gained eSNP; if the alternative allele with lost-enhancer effects have EWN ≥ 5, it will be considered as a lost eSNP.
 
 
-![Fig1_github](https://github.com/user-attachments/assets/0d955d7a-ba00-4fde-9bfa-886ef48522d6)
+<img width="783" alt="Fig1_github_new" src="https://github.com/user-attachments/assets/9c5af3fe-f753-4d3b-b474-a5ec688f42ff" />
+
 
 
 
