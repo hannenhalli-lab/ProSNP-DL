@@ -5,8 +5,8 @@ Necessary files (included in the folder)
 - GeneListsForFisherTest.Rda 
 - mutationFrequencyListOfcancers.Rda  
 - TCGAclinicalDataFile.Rda 
-- TCGA_tpms.RDS
-- gtex_tpms.rds  
+- TCGA_tpms.RDS (needs to be downloaded from https://drive.google.com/file/d/1H6q8OS_vEeRBY7qA0AeZ4dngZglmf9t3/view?usp=drive_link)
+- gtex_tpms.rds (needs to be downloaded from https://drive.google.com/file/d/1Yu0PpsIhs6kJ5NOdK1tzw4MQhFEgByaf/view?usp=drive_link) 
 - tcgaCNVdata.rds
 
 Necessary Biowulf Modules to load
