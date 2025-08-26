@@ -1,0 +1,7 @@
+group_name	target	replicate_number	bam_name	bed_name	SampleID
+essential	StarrSeq	1	lncap_dht_rep1-nodup.bam.sorted	hg19_chromInfo.bed	SRR11831669
+essential	StarrSeq	2	lncap_dht_rep2-nodup.bam.sorted	hg19_chromInfo.bed	SRR11831670
+essential	StarrSeq	3	lncap_dht_rep3-nodup.bam.sorted	hg19_chromInfo.bed	SRR11831671
+nonEssential	StarrSeq	1	lncap_dht_rep1-nodup.bam.sorted	hg19_chromInfo.bed	SRR11831669
+nonEssential	StarrSeq	2	lncap_dht_rep2-nodup.bam.sorted	hg19_chromInfo.bed	SRR11831670
+nonEssential	StarrSeq	3	lncap_dht_rep3-nodup.bam.sorted	hg19_chromInfo.bed	SRR11831671
