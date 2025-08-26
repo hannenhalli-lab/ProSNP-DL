@@ -1,0 +1,7 @@
+Gene	GeneType
+TPM1	regen
+MMP3	wound
+LDLR	wound
+ACTC1	stress
+LECT2	regen
+MYH11	stress
