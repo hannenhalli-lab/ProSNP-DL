@@ -52,4 +52,4 @@ d. We then run step3 to get the list of gained and lost eSNPs:
 
 For more details, please refer to our preprint https://www.medrxiv.org/content/10.1101/2024.11.14.24317278v1.full-text
 
-Licensed under the [MIT License]([LICENSE](https://github.com/hannenhalli-lab/ProSNP-DL/blob/main/LICENSE.txt)).
+Licensed under the [MIT License](https://github.com/hannenhalli-lab/ProSNP-DL/blob/main/LICENSE.txt).
