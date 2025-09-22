@@ -51,3 +51,5 @@ d. We then run step3 to get the list of gained and lost eSNPs:
    perl step3_getEssentialMuts.pl
 
 For more details, please refer to our preprint https://www.medrxiv.org/content/10.1101/2024.11.14.24317278v1.full-text
+
+Licensed under the [MIT License]([LICENSE](https://github.com/hannenhalli-lab/ProSNP-DL/blob/main/LICENSE.txt)).
